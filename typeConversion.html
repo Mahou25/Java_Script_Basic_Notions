@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //Parse Int
+        function convertToInteger(str) {
+            return parseInt(str);
+        }
+
+        console.log(convertToInteger("56"));
+    </script>
+
+    <script>
+        //Use the parseInt Function with a Radix
+        function convertToInteger(str) {
+            return parseInt(str, 2);
+        }
+
+        console.log(convertToInteger("10011"));
+    </script>
+</body>
+</html>

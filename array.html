@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Store Multiple Values with Arrays
+        var myArray = ["bike", 24];
+        console.log(myArray);
+
+        //Nested Arrays
+        var ourArray = [["the universe", 42], ["everything", 101010]];
+        console.log(ourArray);
+
+        //Access Array Data with Indexes
+        var ourArray = [50, 60, 70];
+        var ourData = ourArray[0];
+        console.log(ourData);
+
+        //Modify Array Data With Indexes
+        var ourArray = [50, 60, 70];
+        ourArray[1] = 45;
+        console.log(ourArray);
+
+        //Access Multi-Dimensional Arrays with Indexes
+        var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];
+        var myData = myArray[0][0];
+        var myDummy = myArray[2][1];
+        console.log(myData);
+        console.log(myDummy);
+
+        //Manipulate Array with push; Add elements at the end of the array
+        //It consists of putting a data at the end of the array
+        var ourArray = ["Stimpson", "J", "cat"];
+        ourArray.push(["happy", "joy"]);
+        // ourArray now equals ["Stimpson", "J", "cat", "happy", "joy"]
+        console.log(ourArray);
+
+        //Manipulate Arrays with pop(); Remove element at the end of the array
+        var ourArray = [1, 2, 3];
+        var removedFromOurArray = ourArray.pop();//Le tableau d'origine est d'office modifié
+        console.log(ourArray);
+        console.log(removedFromOurArray);//return the removed element from the table
+
+        //Manipulate Arrays with shift(); Remove element at the begining of array
+        var ourArray = ["Stimpson", "J", "cat"];
+        var removedFromOurArray = ourArray.shift();//Le tableau d'origine est d'office modifié
+        console.log(ourArray);
+        console.log(removedFromOurArray);//return the removed element from the table
+
+        //Manipulate Arrays with unshift(); Add element at the begining of the array
+        var ourArray = ["Stimpson", "J", "cat"];
+        ourArray.shift(); //ourArray now equals ["J", "cat"]
+        ourArray.unshift("Happy");//ourArray now equals ["Happy", "J", "cat"]
+        console.log(ourArray);
+
+        //Shopping List
+        var myList = [["cereal", 3], ["milk", 2], ["bananas", 3], ["juice", 2], ["eggs",4]]
+    </script>
+
+    <script>
+        //Accessing Nested Arrays
+        var myPlants = [
+            {
+                type: "flowers",
+                list:[
+                    "rose",
+                    "tulip",
+                    "dandelion"
+                ]
+            },
+            {
+                type: "trees",
+                list: [
+                    "fir",
+                    "pine",
+                    "birch"
+                ]
+            }
+        ];
+
+        var secondTree = myPlants[1].list[1];
+        console.log(secondTree);
+    </script>
+    
+</body>
+</html>

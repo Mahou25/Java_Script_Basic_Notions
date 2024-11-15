@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var ourDog = {
+            "name": "Camper",
+            "legs": 4,
+            "tails": 1,
+            "friends": ["everything"]
+        };
+
+        var myDog = {
+            "name": "Quincy",
+            "legs": 3,
+            "tails": 2,
+            "friends": [],
+        };
+
+        console.log(ourDog);
+        console.log(myDog);
+    </script>
+
+    <script>
+        //Accessing Object Properties with Dot Notation
+        var testObj ={
+            "hat": "ballcap",
+            "shirt": "jersey",
+            "shoes": "cleats"
+        };
+        var hatValue = testObj.hat;
+        var shirtValue = testObj.shirt;
+        console.log(hatValue);
+        console.log(shirtValue);
+    </script>
+
+    <script>
+        //Accessing Object Properties with Bracket Notation
+        var testObj = {
+            "an entree": "hamburger",
+            "my side": "verggies",
+            "the drink": "water"
+        };
+
+        var entreeValue = testObj["an entree"];
+        var drinkValue = testObj['the drink'];
+
+        console.log(entreeValue);
+        console.log(drinkValue);
+    </script>
+
+    <script>
+        //Accessing object Properties with Variables
+        var testObj = {
+            12: "Namath",
+            16: "Montana",
+            19: "Unitas"
+        }
+
+        var playerNumber = 16;
+        var player = testObj[playerNumber];
+        console.log(player);
+    </script>
+
+    <script>
+        //Updating Object Properties
+        var ourDog = {
+            "name": "Camper",
+            "legs": 4,
+            "tails": 1,
+            "friends": ["everything"]
+        };
+
+        ourDog.name = "Happy Camper";
+
+        var myDog = {
+            "name": "Coder",
+            "legs": 4,
+            "tails": 1,
+            "friends": ["freeCodeCamp Campers"],
+        };
+        myDog.name = "Happy Coder";
+
+        console.log(ourDog.name);
+        console.log(myDog.name);
+    </script>
+
+    <script>
+        //Add new Properties to an Object
+        var ourDog = {
+            "name": "Camper",
+            "legs": 4,
+            "tails": 1,
+            "friends": ["everything"]
+        };
+
+        ourDog.bark = "bow-bow";
+
+        var myDog = {
+            "name": "Happy Coder",
+            "legs": 4,
+            "tails": 1,
+            "friends": ["freeCodeCamp Campers"],
+        };
+        myDog['bark'] = "woof !"
+
+        console.log(myDog.bark);
+        console.log(ourDog.bark)
+
+        console.log(myDog);
+        console.log(ourDog);
+
+    </script>
+
+    <script>
+        //Delete Properties From An Object
+        var ourDog = {
+            "name": "Camper",
+            "legs": 4,
+            "tails": 1,
+            "friends": ["everything !"],
+            "bark": "bow-bow",
+            "bark1": "baw-baw",
+        };
+
+        delete ourDog.bark1;
+
+        var myDog = {
+            "name": "Happy Coder",
+            "legs": 4,
+            "tails": 1,
+            "friends": ["freeCodeCamp Campers"],
+            "bark": "woof !",
+            "bark1": "Woof !",
+        };
+        delete myDog.bark1;
+
+        console.log(myDog);
+        console.log(ourDog);
+    </script>
+
+    <script>
+        //Using Objects for Lookups
+        function phoneticLookup(val) {
+            var result = "";
+
+            var lookup = {
+                "alpha": "Adams",
+                "bravo": "Boston",
+                "charlie": "Chicago",
+                "delta": "Easy",
+                "fostrot": "franck"
+            };
+
+            // Only change code below this line
+            switch(val) {
+            case "alpha":
+                result = "Adams";
+                break;
+            case "bravo":
+                result = "Boston";
+                break;
+            case "charlie":
+                result = "Chicago";
+                break;
+            case "delta":
+                result = "Denver";
+                break;
+            case "echo":
+                result = "Easy";
+                break;
+            case "foxtrot":
+                result = "Frank";
+                break;
+            }
+
+            result = lookup[val];
+
+            return result;
+        }
+
+        
+        
+
+        console.log(phoneticLookup("charlie"));
+    </script>
+
+    <script>
+        //Testing Objects for Properties
+        var my0bj = {
+        gift: "pony",
+        pet: "kitten",
+        bed: "sleigh"}
+
+        function check0bj (checkProp) {
+            // Your Code Here
+           if ( my0bj.hasOwnProperty(checkProp)) {
+             return my0bj[checkProp];
+           } else {
+             return "Not Found";
+           }
+            return "Change Me!";
+        }
+
+        // Test your code by modifying these values
+        console.log(checkObj("gift"));
+    </script>
+
+    <script>
+        //Manipulating Complex Objects
+        var myMusic = [
+            {
+
+                "artist": "Billy Joel",
+                "title": "Piano Man",
+                "release_year": 1973,
+                "formats": [
+                "CD",
+                "8T",
+                "LPI",
+                ],
+                "gold": true,
+
+            },
+             // Add record here
+            {
+                "artist": "Beau Carnes",
+                "title": "Cereal Man",
+                "release_year": 2003,
+                "formats": [
+                    "YouTube video"
+                ]
+            }
+
+        ];
+    </script>
+
+    <script>
+        //Accessing Nested Objects
+        // Setup
+        var myStorage = {
+            "car": {
+                "inside": {
+                    "glove box": "maps",
+                    "passenger seat": "crumbs"
+                },
+
+                "outside": {
+                "trunk": "jack"
+                }
+            }
+        };
+        var gloveBoxContents = myStorage.car.inside["glove box"]; // Change this line
+
+        console. log(gloveBoxContents)
+    </script>
+
+    <script>
+        //Record Collections
+
+        var collection = {
+            "2548": {
+                "album": "Sli^^ery when wet",
+                "artist": "Bon jovi",
+                "tracks": [
+                    "Let It Rock",
+                    "You Give Love a Bad Name"
+                ]
+            },
+            "2468": {
+                "album": "1999",
+                "artist": "Prince",
+                "tracks": [
+                    "1999",
+                    "Little Red Corvette"
+                ]
+            },
+            "1245": {
+                "artist": "Robert Palmer",
+                "tracks": [ ]
+            },
+            "5439": {
+                "album": "ABBA Gold"
+            }
+        };
+
+
+        var collectionCopy = JSON.parse(JSON.stringify (collection));
+
+        function updateRecords(id, prop, value) {
+            if (value === "") {
+                delete collection[id][prop]
+            }else if (prop === "tracks") {
+                collection[id][prop] = collection[id][prop] || [];
+                collection[id][prop].push(value);
+            }else{
+                collection[id][prop] = value;
+            }
+            return collection;
+        }
+
+        var updatedCollection = updateRecords(5439, "artist", "ABBA");
+        console.log(updatedCollection);
+    </script>
+</body>
+</html>

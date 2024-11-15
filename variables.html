@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var number = 5;//in-line comment
+        /*multi-line comment*/
+        console.log('Hello world')
+        number = 9;
+        console.log(number);
+        /*Data Types
+        undefined, null, boolean, string, symbol, number, and object
+        */
+       
+        //Differents ways to declare variable
+       var myName = "Beau" //Can be used in a whole program
+       myName = 8
+
+       let ourName = "freeCodeCamp" //Can be only be used in the scoop u declred it
+
+       const pi = 3.14
+
+
+       //Storing values with Assignment Operator
+       var a; //Declaration
+       console.log(a)
+       var b = 2; //Declaration ant initialization or assignment
+
+       a = 7; 
+
+       b = a;
+
+       console.log(a)
+
+       //Uninitialized variables
+
+       //Initialized these three variables
+       var a =5;
+       var b =10;
+       var c ="I am a";
+
+       //Don't change code below this line
+       a = a + 1;
+       b = b + 5;
+       c = c + "String!";
+
+
+       //Adding number
+       var sum = 10 + 10;
+       console.log(sum);
+
+       var difference = 45 - 20;
+       console.log(difference);
+
+       var product = 8 * 8;
+       console.log(product);
+
+       var quotient = 66/33;
+       console.log(quotient);
+
+       // Number Incrementation
+        var myVar = 87;
+        myVar = myVar + 1;
+
+        console.log(myVar);
+
+        myVar++;
+        console.log(myVar);
+
+        myVar = myVar - 1;
+        console.log(myVar);
+
+        myVar--;
+        console.log(myVar);
+
+        //Decimal number
+        var ourDecimal = 5.9;
+        console.log(ourDecimal);
+
+        //Multiply Decimals
+        var product = 2.0 * 2.5;
+        console.log(product);
+
+        //Divide Decimals
+        var quotient = 10.0 / 5.2;
+        console.log(quotient);
+
+        //Finding a remainder
+        var remainder;// Le reste après la division
+        remainder = 11 % 3;
+        console.log(remainder); // When the remainber equals to 0, that means the number is even
+
+        //Compound Assignment with Augmented Addition
+       
+        var a = 5;
+        var b = 10;
+        var c = 17;
+
+        
+        a += 12 ;
+        b += 9 ;
+        c += 7 ;
+
+        //Compound Assignment with Augmented Subtraction
+        var a = 5;
+        var b = 10;
+        var c = 17;
+
+        
+        a -= 2 ;
+        b -= 6 ;
+        c -= 7 ;
+
+        //Compound Assignment with Augmented Multiplication
+        var a = 5;
+        var b = 10;
+        var c = 17;
+
+        
+        a *= 2 ;
+        b *= 6 ;
+        c *= 7 ;
+
+        //Compound Assignment with Augmented Division
+        var a = 48;
+        var b = 108;
+        var c = 33;
+
+        
+        a /= 12 ;
+        b /= 4 ;
+        c /= 11 ;
+
+
+        //Declares String Variables
+        var firstname = "Alban";
+        var lastName = "Turing";
+
+        var myFirstname = "Beau";
+        var myLastName = "Carnes";
+
+        //Escaping Literal Quotes in Strings
+        var myStr = "I am a \"double quoted\" string inside \"double quotes \" ";
+        console.log(myStr);
+
+        //Quoting Strings with Single Quotes
+        var myStr = '<a href="http://www.example.com" target = "_blank">Link</a>';
+        console.log(myStr);
+
+         //Quoting Strings with both  Single Quotes and Double Quotes
+        var myStr = `'<a href="http://www.example.com" target = "_blank">Link</a>'`;
+        console.log(myStr);
+
+        //Escaping Sequences in Strings
+
+        /*
+            CODE OUTPUT
+            \' single quote
+            \" double quote
+            \\ backslash
+            \n newline
+            \r carriage return
+            \t tab
+            \b backspace
+            \f form feed 
+        */
+
+        myStr = "FirstLine\n\t\\SecondLine\nThirdLine";
+        console.log(myStr);
+
+        //Concatenating String with Plus Operator
+        var ourStr = "I come first." + "I come second.";
+        console.log(ourStr);
+
+        var myStr = "This is the start." + "This is the end.";
+        console.log(myStr);
+
+        //Concatenating String with Plus Equals Operator
+        var ourStr = "I come first.";
+        ourStr += "I come second.";
+        console.log(ourStr);
+
+        //Constructing String With Variables
+        var ourfirstName = "freeCodeCamp" ;
+        var ourStr = "Hello, our first name is " + ourfirstName + ", how are you?";
+        console.log(ourStr);
+
+        //Appending variable to Strings
+        var anAdjective = "Awesome!";
+        var ourStr = "freeCodeCamp is ";
+        ourStr += anAdjective;
+        console.log(ourStr);
+
+        //Find Length of String
+        var firstNameLength = 0;
+        var firstName = "Ada";
+        firstNameLength = firstName.length;
+        console.log(firstNameLength);
+
+        //Bracket Notation to Find First Character in String
+        var firstLetterOfFirstName = "";
+        var firstName = "Ada";
+        firstLetterOfFirstName = firstName[0];
+        console.log(firstLetterOfFirstName);
+
+        //String Immutability: Strings are just immutable, for example:
+        /*
+            var greeting = "Jello World !"
+            so we want to change it into "Hello World !"
+            It is not possible to do it like that:
+            greeting[0] = "H" //error
+            The only way to do it is:
+            greeting = "Hello World !"
+        */
+
+        //Bracket Notation to Find Last Character in String
+        var firstName = "Ada";
+        var lastLetterOfFirstName = firstName[firstName.length - 1];
+        console.log(lastLetterOfFirstName);
+
+        //Bracket Notation to Find Nth-to-Last Character in String
+        //Example: 2nd to last
+        var firstName = "Adama";
+        var secondToLastLetterOfFirstName = firstName[firstName.length - 2];
+        console.log(secondToLastLetterOfFirstName);
+
+        //Example: 3rd to last
+        var firstName = "Adama";
+        var thirdToLastLetterOfFirstName = firstName[firstName.length - 3];
+        console.log(thirdToLastLetterOfFirstName);
+
+        //Word Blanks
+        
+    </script>
+    
+</body>
+</html>
